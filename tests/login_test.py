@@ -21,7 +21,7 @@ class TestLogin():
             login.enter_password(utils.PASSWORD)
             login.signinToHome()
             x = driver.title
-            assert x == "abc"
+            assert x == "Booking.com Account"
         except AssertionError as error:
             print("Assertion error accrued")
             print(error)
